@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "RACCOON MUSIC",
+    "slug": "raccoon-music",
+    "scheme": "raccoonmusic",
+    "version": "0.2.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/app-icon.png",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.raccoonmusic.app"
+    },
+    "android": {
+      "package": "com.raccoonmusic.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app-icon.png",
+        "backgroundColor": "#08090B"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": false
+        }
+      ],
+      "expo-sqlite",
+      "expo-document-picker",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#08090B",
+          "image": "./assets/splash-logo.png",
+          "imageWidth": 190,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
